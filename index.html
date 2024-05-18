@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website for Sale</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var hostname = window.location.hostname;
+            document.getElementById("website-name").textContent = hostname;
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This website <span id="website-name"></span> is for sale.</h1>
+        <p>Contact <a href="mailto:mail@5mx.org">mail@5mx.org</a> for details.</p>
+    </div>
+</body>
+
+</html>
